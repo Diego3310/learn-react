@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React from 'react'
 import FruitCard from './components/fruit-card/FruitCard'
 import { fruits } from './assets/mock/data'

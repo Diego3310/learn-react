@@ -4,8 +4,7 @@ export const fruits = [
         "name"  :  "Orange",
         "price" :  "5.00",
         "stock" :  "10",
-        "img"   :  "https://image.shutterstock.com/image-photo/ripe-orange-isolated-on-white-260nw-606022676.jpg"
-    },
+        "img"   :  "https://ceyloncoolspice.com/wp-content/uploads/2018/07/orange.jpg"  },
     {
         "name"  :  "Apple",
         "price" :  "3.00",
