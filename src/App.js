@@ -1,5 +1,5 @@
 import React from 'react'
-import FruitCard from './components/FruitCard'
+import FruitCard from './components/fruit-card/FruitCard'
 import { fruits } from './assets/mock/data'
 
 

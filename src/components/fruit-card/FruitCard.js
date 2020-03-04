@@ -1,6 +1,5 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react'
 
 
@@ -44,16 +43,16 @@ class FruitCard extends React.Component {
         return (
             <div className="card" >
                 <div className="card-header">
-                    <button type="button" className="btn btn-secondary mr-2">
+                    <button type="button" className="btn btn-secondary">
                         Added <span className="badge badge-light">{this.state.quantity}</span>
                     </button>
+                    <span className="ml-5 border rounded-circle p-2">Total : $ {this.props.price * this.state.quantity}</span>
                 </div>
                 <img src={this.props.img} className="card-img-top img-thumbnail" />
                 <div className="card-body">
                     <h5 className="card-title">{this.props.name}</h5>
-                    <p id="stock-js" className="card-text"> Stock :
-                            {this.props.stock - this.state.quantity}</p>
-                    <p className="card-text">Price :  {this.props.price}</p>
+                    <p id="stock-js" className="card-text"> Stock : {this.props.stock - this.state.quantity}</p>
+                    <p className="card-text">Price : $ {this.props.price}</p>
                     <div className="text-center btn-group">
                         <button className="btn btn-info" onClick={this.add}>Add</button>
                         <button className="btn btn-danger" onClick={this.remove}>Remove</button>
